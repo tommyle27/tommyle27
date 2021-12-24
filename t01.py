@@ -1,37 +1,43 @@
 """
-------------------------------------------------------------------------
+-------------------------------------------------------
 [program description]
-Assignment 01, Q1
-------------------------------------------------------------------------
-Author: Tommy Le
-ID:     200298530
-Email:  lexx8530@mylaurier.ca
-__updated__ = "2020-09-18"
-------------------------------------------------------------------------
+User inputs origin, outputs food objects of inputed origin
+-------------------------------------------------------
+Author:  Tommy Le
+ID:      200298530
+Email:   lexx8530@mylaurier.ca
+__updated__ = "2021-01-17"
+-------------------------------------------------------
 """
-#question
-print('What is "program"?')
-#answers the question
-print('''A program is a sequence of instructions that specifies how to perform a 
-computation. The details look different in different languages, but a 
-few basic instructions appear in just about every language: 
+# Imports
+from Food_utilities import by_origin, read_foods
 
-input: Get data from the keyboard, a file, or some other device.
-output: Display data on the screen or send data to a file or 
-other device.
 
-math: Perform basic mathematical operations like addition 
-and multiplication.
-
-conditional execution: Check for certain conditions and execute 
-the appropriate code.
-repetition: Perform some action repeatedly, usually with some variation.''')
-#conclusion
-print("Believe it or not, that's pretty much all there is to it")
-#Origin of the algebra/Algorithm
-print('''A computer program can be viewed as an elaborate algorithm. The word
-"algorithm" derives from the name of the mathematician, al-khwarizmi, who
-was part of the royal court in Baghdad and who lived from about 780 to 
-850. Al-Khwarizmi's work is the likely source for the word algebra
-as well''')
-
+file_variable = open("foods.txt", "r")
+foods = read_foods(file_variable)
+origin = input("Origin: ")
+if origin == "Canadian":
+    origin = 0
+elif origin == "Chinese":
+    origin = 1
+elif origin == "Indian":
+    origin = 2
+elif origin == "Ethiopian":
+    origin = 3
+elif origin == "Mexican":
+    origin = 4
+elif origin == "Greek":
+    origin = 5
+elif origin == "Japanese":
+    origin = 6
+elif origin == "Italian":
+    origin = 7
+elif origin == "American":
+    origin = 8
+elif origin == "Scottish":
+    origin = 9
+elif origin == "New Zealand":
+    origin = 10
+elif origin == "English":
+    origin = 11
+v = by_origin(foods, origin)
