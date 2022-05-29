@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @tommyle27
 - 👀 I’m interested in Game development
 - 🌱 I’m currently learning computer science and psychology
-- 💞️ I’m looking to collaborate on ...
+- 💞️ I’m looking to collaborate on video game projects
 - 📫 How to reach me Tommyle0227@gmail.com
 
 <!---
