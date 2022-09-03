@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TommyLeStudios</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		
+			<!-- Top bar -->
+		<div class="bar">	
+			<div class="containter">
+				<a class="logo" href="#">TOMMY LE</a>
+				
+				<img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="menu nav">
+				
+				<nav>
+					<img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="exit nav">
+				
+					<ul class="primary-nav">
+						<li class="mainpage"> <a href="#top">Home</a> </li>
+						<li> <a href="images/Resume.pdf">Resume</a> </li>
+						<li> <a href="https://github.com/tommyle27" target="_blank">Github</a> </li>
+					</ul>
+					
+					<ul class="secondary-nav">
+						<li> <a href="#bottom">Contacts</a> </li>
+					</ul>				
+					
+				</nav>
+			</div>
+		</div>
+		
+		<!-- Top of Page -->
+		<section id="top" class="hero">
+			<div class="container">
+
+				<img style="position: relative; right:10em" src="images/profile4.jpg" class="hero-img" alt="me">
+
+					<div style="position: relative; left:5em" class="left-col">
+						<h1>WHAT'S UP!</h1>
+						<p class="subhead">Hi welcome to my website! I'm Tommy Le and I am currently 20 years old. This is where I will showcase my self taught videogame projects. Enjoy! A little about myself, I grew up here in Canada with a strong drive to learn and understand the videogames I was exposed to. I am currently attending WLU for computer science and psychology! I enjoy going to the gym on my off days, solving puzzles (especially the rubiks cube!), gaming, and finding and learning new music!</p>
+					</div>
+								
+			</div>
+		</section>
+		
+		<!-- gallary-FPS-Demo -->
+		<section class="FpsGallary">
+
+			<div class="container">
+
+				<div style="position: relative; right:22em" class="right-col">
+					<h3>Language:</h3>
+					<p>C++ via Unreal Engine</p>
+					<h3>About:</h3>
+					<p>This was the first project I have ever attempted. This project was aimed to develop a basic first person shooter demo, with basic functions such as movement i.e. (sprint, jump and crouch), as well as shooting and an implentation of a health bar and stamina bar. Although no scripting was done, using blueprints help me gain a better visual understanding on what was going on behind the scenes, such as proper ordering of code through blueprints, and how assets and code come together to build something amazing!</p>
+				</div>
+
+				<div style="position: relative; left:22em"  class="FPSvid">
+					<h1>FPS Demo</h1>
+					<iframe class="responsive-iframe" width="600" height="350" src="https://www.youtube.com/embed/N7CUrlPKqJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+				</div>
+
+			</div>
+		</section>
+
+		<!-- gallary-Snake -->
+		<section class="SnakeGallary">
+
+			<div class="container">
+
+				<div style="position: relative; right:22em" class="SnakeVid">
+					<h1>Snake</h1>
+
+					<iframe class="responsive-iframe"  width="600" height="350"  src="https://www.youtube.com/embed/-hTyW7Sgcn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+				</div>
+
+
+				<div style="position: relative; left:22em" class="S-left-col">
+					<h3>Language:</h3>
+					<p class="Lsubhead">C# via Unity</p>
+					<h3>About:</h3>
+					<p class="Asubhead">This was the first recreation of a video game to completion! It was a really fun project that helped me learn some pixel art skills along the way while designing the apples the snake eats. It is also the first game that is fully developed in code, (available in my github). This project taught me how to implement spawning of objects in random locations, and design the game for a balanced and fun challenge for the player, as the snake increases in size at a steady rate. Not too slow or fast where the player may become bored or upset with the game. This process was a done through trial and error, playing through the game to find the sweet spot for a well balanced game of snake.</p>
+				</div>
+
+			</div>                                                                                                                                                                                                                                                      
+		</section>                                             
+                             
+		<!-- contact user input -->
+		<section class="contact-section">
+			<div id="bottom" class="container">
+				<div class="contact-left">
+					<h2>Contact</h2>
+					<form action="">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Your Name">
+						
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="Your Email">
+						
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						
+						<input type="submit" class="send-message-cta" value="Send">
+					</form>
+
+					<h3>Contact Me Directly!</h3>
+
+					<ul class="contacts">
+						<li>Cell: (+1) 226-505-3959</li>
+						<li>Email: Tommyle0227@gmail.com</li>
+						<li>Instagram: Tommy.le02</li>
+					</ul>
+
+				</div>
+				
+			</div>
+		</section>
+		
+		
+		<script>
+			
+			const mobileBtn = document.getElementById('mobile-cta')
+				nav = document.querySelector('nav');
+				mobileBtnExit = document.getElementById('mobile-exit');
+				
+			mobileBtn.addEventListener('click', () => {
+				nav.classList.add('mobile-menu');
+			})
+			
+			mobileBtnExit.addEventListener('click', () => {
+				nav.classList.remove('mobile-menu');
+			})
+		</script>
+
+
+
+	</body>
+</html>
