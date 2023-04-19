@@ -7,4 +7,6 @@
 <!---
 tommyle27/tommyle27 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
+
+This is all of the code I have ever written throughout my carreer at WLU as a student in Computer Science and Psychology!
 --->
